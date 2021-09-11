@@ -1,0 +1,22 @@
+.xp {
+    &_item {
+        @include highlight-box;
+
+        h3, 
+        h4,
+        p {
+            margin: 5px 0;
+        }
+
+        &--year {
+            font-weight: 100;
+        }
+
+        &--details {
+            li {
+                margin: 20px 0;
+                text-align: justify;
+            }
+        }
+    }
+}

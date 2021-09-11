@@ -1,0 +1,17 @@
+@mixin highlight-box {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+@mixin border-right {
+    border-right: 1px solid $color-corporate;
+    margin: 40px 15px;
+    padding-right: 10px;
+}
+@mixin border-left {
+    border-left: 1px solid $color-corporate;
+    margin: 40px 15px;
+    padding-left: 10px;
+}

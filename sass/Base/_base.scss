@@ -1,0 +1,25 @@
+body {
+    background-color: $color-bg-body;
+    font-family: "Raleway", sans-serif;
+    color: $color-text;
+    font-size: 1rem;
+}
+
+h1,
+h2 {
+    font-family: "Major Mono Display", monospace;
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 1px solid $color-corporate;
+    padding-bottom: 10px;
+    width: min-content;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}

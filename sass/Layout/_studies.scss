@@ -1,0 +1,19 @@
+.studies {
+    &_item {
+        border-left: 1px solid $color-corporate;
+        margin: 15px;
+        padding-left: 10px;
+
+        h3, p {
+            margin: 5px 0;
+        }
+
+        &--subtitle {
+            font-weight: 500;
+        }
+
+        &--year {
+            font-weight: 100;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+section {
+    animation: slide-top 2000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) 800ms both;
+}
+
+@keyframes slide-top {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+}
+
+@-moz-keyframes slide-top {
+
+    /* sur Firefox */
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes slide-top {
+
+    /* sur Safari et Chrome */
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-o-keyframes slide-top {
+
+    /* sur Opera */
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

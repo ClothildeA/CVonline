@@ -117,6 +117,7 @@ header h1 {
 
 #tech-skl ul li {
   list-style: none;
+  padding: 5px;
 }
 
 #contact ul {
@@ -144,7 +145,6 @@ header h1 {
   color: #daae93;
 }
 
-/* Important styles */
 #toggle {
   display: block;
   width: 28px;
@@ -216,7 +216,6 @@ header h1 {
   background: white;
   -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
-  /* just for this demo */
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity .4s;
@@ -263,6 +262,7 @@ header h1 {
   width: 80%;
   list-style: circle;
   padding: 0;
+  margin: auto;
 }
 
 .list li {

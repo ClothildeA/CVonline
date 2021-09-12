@@ -1,21 +1,43 @@
-.xp {
-    &_item {
-        @include highlight-box;
+.xp-wrapper {
 
-        h3, 
-        h4,
-        p {
-            margin: 5px 0;
+    .xp {
+        margin-bottom: 70px;
+
+        &_item {
+            @include highlight-box;
+
+            h3,
+            h4,
+            p {
+                margin: 5px 0;
+            }
+
+            &--year {
+                font-weight: 100;
+            }
+
+            &--details {
+                li {
+                    margin: 20px 0;
+                    text-align: justify;
+                }
+            }
         }
+    }
+}
 
-        &--year {
-            font-weight: 100;
-        }
+@media all and (min-width: 1025px) {
+    .xp-wrapper {
+        display: flex;
+        flex-basis: 100%;
 
-        &--details {
-            li {
-                margin: 20px 0;
-                text-align: justify;
+        .xp {
+            flex-basis: 50%;
+            margin: 30px 0;
+            padding: 0px 50px;
+
+            &:first-child {
+                border-right: 1px solid $color-corporate;
             }
         }
     }

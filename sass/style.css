@@ -9,7 +9,7 @@ body {
 
 h1,
 h2 {
-  font-family: "Major Mono Display", monospace;
+  font-family: "Megrim", monospace;
   text-align: center;
 }
 
@@ -33,6 +33,22 @@ section {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px;
+  margin: auto;
+}
+
+@media all and (min-width: 750px) {
+  section {
+    max-width: 600px;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  section {
+    max-width: 900px;
+  }
+  #xp {
+    max-width: 1200px;
+  }
 }
 
 header {
@@ -82,26 +98,49 @@ header h1 {
   font-weight: 100;
 }
 
-.xp_item {
+.xp-wrapper .xp {
+  margin-bottom: 70px;
+}
+
+.xp-wrapper .xp_item {
   background-color: white;
   border-radius: 5px;
   padding: 15px;
   margin: 15px 0;
 }
 
-.xp_item h3,
-.xp_item h4,
-.xp_item p {
+.xp-wrapper .xp_item h3,
+.xp-wrapper .xp_item h4,
+.xp-wrapper .xp_item p {
   margin: 5px 0;
 }
 
-.xp_item--year {
+.xp-wrapper .xp_item--year {
   font-weight: 100;
 }
 
-.xp_item--details li {
+.xp-wrapper .xp_item--details li {
   margin: 20px 0;
   text-align: justify;
+}
+
+@media all and (min-width: 1025px) {
+  .xp-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .xp-wrapper .xp {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin: 30px 0;
+    padding: 0px 50px;
+  }
+  .xp-wrapper .xp:first-child {
+    border-right: 1px solid #daae93;
+  }
 }
 
 #tech-skl ul {
@@ -121,6 +160,37 @@ header h1 {
 #tech-skl ul li {
   list-style: none;
   padding: 5px;
+}
+
+@media all and (min-width: 1025px) {
+  .skill-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .skill-wrapper #soft-skl {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .skill-wrapper #soft-skl ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .skill-wrapper #soft-skl ul .half-list {
+    width: 50%;
+  }
+  .skill-wrapper #tech-skl {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin: 0;
+  }
+}
+
+#contact {
+  margin: 50px auto;
 }
 
 #contact ul {

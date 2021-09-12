@@ -9,7 +9,7 @@ body {
 
 h1,
 h2 {
-    font-family: "Major Mono Display", monospace;
+    font-family: "Megrim", monospace;
     text-align: center;
 }
 
@@ -24,4 +24,24 @@ section {
     flex-direction: column;
     align-items: center;
     padding: 15px;
+    margin: auto;
 }
+
+@media all and (min-width: 750px) {
+    section {
+        max-width: 600px;
+    }
+
+}
+
+@media all and (min-width: 1025px) {
+    section {
+        max-width: 900px;
+    }
+
+    #xp {
+        max-width: 1200px;
+    }
+    
+}
+

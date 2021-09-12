@@ -3,8 +3,20 @@
     list-style: circle;
     padding: 0;
     margin: auto;
-    
+
     li {
         padding: 5px 0;
+    }
+}
+
+.list-in {
+    list-style: none;
+    width: 80%;
+    padding: 0;
+    margin: auto;
+
+    li {
+        border-left: 1px solid $color-corporate;
+        padding: 5px 15px;
     }
 }

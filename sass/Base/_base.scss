@@ -7,13 +7,14 @@ body {
     border-radius: 5px;
 }
 
-h1,
-h2 {
-    font-family: "Megrim", monospace;
+h1 {
+    font-family: "Major Mono Display", monospace;
     text-align: center;
 }
 
 h2 {
+    font-family: "Megrim", monospace;
+    text-align: center;
     border-bottom: 1px solid $color-corporate;
     padding-bottom: 10px;
     width: min-content;

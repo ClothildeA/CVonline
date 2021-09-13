@@ -7,13 +7,14 @@ body {
   border-radius: 5px;
 }
 
-h1,
-h2 {
-  font-family: "Megrim", monospace;
+h1 {
+  font-family: "Major Mono Display", monospace;
   text-align: center;
 }
 
 h2 {
+  font-family: "Megrim", monospace;
+  text-align: center;
   border-bottom: 1px solid #cd8e67;
   padding-bottom: 10px;
   width: -webkit-min-content;
@@ -82,7 +83,7 @@ header #menu-desktop {
     background-position: bottom;
   }
   header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
@@ -154,7 +155,7 @@ header #menu-desktop {
 }
 
 .studies {
-  max-width: 1000px;
+  max-width: 800px;
 }
 
 .studies_item {
@@ -527,7 +528,7 @@ i {
   color: #cd8e67;
 }
 
-section {
+main {
   -webkit-animation: slide-top 2000ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 800ms both;
           animation: slide-top 2000ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 800ms both;
 }

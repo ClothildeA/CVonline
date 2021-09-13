@@ -4,9 +4,78 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
     padding: 15px;
+    max-width: 600px;
+    margin: auto;
 
     h1 {
         font-size: 1.6rem;
+
+    }
+
+    #menu-desktop {
+        display: none;
+    }
+}
+
+@media all and (min-width: 750px) {
+    header {
+        background-position: bottom;
+        h1 {
+            font-size: 2rem;
+            flex-basis: 50%;
+        }
+    }
+}
+
+@media all and (min-width: 1025px) {
+    header {
+        max-width: 1000px;
+        flex-direction: column;
+
+        .menu-toggle {
+            display: none;
+        }
+
+        #menu-desktop {
+            display: block;
+            background: #fff;
+            border-radius: 5px;
+            padding: 25px;
+            font-family: "Major Mono Display", monospace;
+
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                flex-basis: 100%;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    flex-basis: 16%;
+                    text-align: center;
+                    place-self: center;
+
+                    a {
+                        color: #888;
+                        text-decoration: none;
+                        font-size: .8rem;
+                        transition: all .2s;
+                        border-radius: 5px;
+                        padding: 15px;
+                        
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            color: #fff;
+                            background: $color-corporate;
+                        }                  
+                    }
+                }
+            }
+        }
     }
 }

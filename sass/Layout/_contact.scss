@@ -1,5 +1,6 @@
 #contact {
     margin: 50px auto;
+    max-width: 1200px;
     ul {
         padding: 0;
 
@@ -17,6 +18,35 @@
                     color: $color-corporate;
                 }
             }
+        }
+    }
+}
+
+@media all and (min-width: 750px) {
+    #contact ul {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        width: 80%;
+
+        li {
+            flex-basis: 50%;
+        }
+    }
+}
+
+@media all and (min-width: 1025px) {
+    #contact ul {
+        padding: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        li {
+            justify-content: center;
         }
     }
 }

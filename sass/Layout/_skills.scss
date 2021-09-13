@@ -4,6 +4,7 @@
         flex-direction: column;
         align-items: center;
         padding: 0;
+        margin: 25px auto;
 
         li {
             list-style: none;
@@ -12,20 +13,31 @@
     }
 }
 
+@media all and (min-width: 750px) {
+    #soft-skl {
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-basis: 100%;
+
+            li {
+                flex-basis: 50%;
+            }
+        }
+    }
+}
 
 @media all and (min-width: 1025px) {
     .skill-wrapper {
+        max-width: 1200px;
+        margin: auto;
         display: flex;
         flex-basis: 100%;
         #soft-skl {
             flex-basis: 50%;
-            ul {
-                display: flex;
-
-                .half-list {
-                    width: 50%;
-                }
-            }
+            
         }
         #tech-skl {
             flex-basis: 50%;

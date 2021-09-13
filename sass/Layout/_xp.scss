@@ -39,6 +39,10 @@
             &:first-child {
                 border-right: 1px solid $color-corporate;
             }
+
+            &_details {
+                margin: 50px auto;
+            }
         }
     }
 }

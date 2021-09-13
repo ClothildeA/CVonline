@@ -1,9 +1,9 @@
 body {
-  background-color: #f3f0ea;
+  background-color: #f3f0ec;
   font-family: "Raleway", sans-serif;
-  color: #2f3033;
+  color: #2e2e2e;
   font-size: 1rem;
-  border: 1px solid #daae93;
+  border: 1px solid #cd8e67;
   border-radius: 5px;
 }
 
@@ -14,7 +14,7 @@ h2 {
 }
 
 h2 {
-  border-bottom: 1px solid #daae93;
+  border-bottom: 1px solid #cd8e67;
   padding-bottom: 10px;
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -44,7 +44,7 @@ section {
 
 @media all and (min-width: 1025px) {
   section {
-    max-width: 900px;
+    max-width: 750px;
   }
   #xp {
     max-width: 1200px;
@@ -59,11 +59,85 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 15px;
+  max-width: 600px;
+  margin: auto;
 }
 
 header h1 {
   font-size: 1.6rem;
+}
+
+header #menu-desktop {
+  display: none;
+}
+
+@media all and (min-width: 750px) {
+  header {
+    background-position: bottom;
+  }
+  header h1 {
+    font-size: 2rem;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  header {
+    max-width: 1000px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .menu-toggle {
+    display: none;
+  }
+  header #menu-desktop {
+    display: block;
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px;
+    font-family: "Major Mono Display", monospace;
+  }
+  header #menu-desktop ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  header #menu-desktop ul li {
+    -ms-flex-preferred-size: 16%;
+        flex-basis: 16%;
+    text-align: center;
+    place-self: center;
+  }
+  header #menu-desktop ul li a {
+    color: #888;
+    text-decoration: none;
+    font-size: .8rem;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  header #menu-desktop ul li a:hover, header #menu-desktop ul li a:focus, header #menu-desktop ul li a:active {
+    color: #fff;
+    background: #cd8e67;
+  }
 }
 
 .who_img {
@@ -79,8 +153,12 @@ header h1 {
   padding: 5px;
 }
 
+.studies {
+  max-width: 1000px;
+}
+
 .studies_item {
-  border-left: 1px solid #daae93;
+  border-left: 1px solid #cd8e67;
   margin: 15px;
   padding-left: 10px;
   width: 80%;
@@ -96,6 +174,14 @@ header h1 {
 
 .studies_item--year {
   font-weight: 100;
+}
+
+@media all and (min-width: 1025px) {
+  .studies_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .xp-wrapper .xp {
@@ -139,7 +225,10 @@ header h1 {
     padding: 0px 50px;
   }
   .xp-wrapper .xp:first-child {
-    border-right: 1px solid #daae93;
+    border-right: 1px solid #cd8e67;
+  }
+  .xp-wrapper .xp_details {
+    margin: 50px auto;
   }
 }
 
@@ -155,6 +244,7 @@ header h1 {
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
+  margin: 25px auto;
 }
 
 #tech-skl ul li {
@@ -162,8 +252,29 @@ header h1 {
   padding: 5px;
 }
 
+@media all and (min-width: 750px) {
+  #soft-skl ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  #soft-skl ul li {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
 @media all and (min-width: 1025px) {
   .skill-wrapper {
+    max-width: 1200px;
+    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -174,14 +285,6 @@ header h1 {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
-  .skill-wrapper #soft-skl ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .skill-wrapper #soft-skl ul .half-list {
-    width: 50%;
-  }
   .skill-wrapper #tech-skl {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -191,6 +294,7 @@ header h1 {
 
 #contact {
   margin: 50px auto;
+  max-width: 1200px;
 }
 
 #contact ul {
@@ -209,13 +313,53 @@ header h1 {
 
 #contact ul li a {
   text-decoration: none;
-  color: #2f3033;
+  color: #2e2e2e;
   -webkit-transition: ease-in-out 200ms;
   transition: ease-in-out 200ms;
 }
 
 #contact ul li a:hover {
-  color: #daae93;
+  color: #cd8e67;
+}
+
+@media all and (min-width: 750px) {
+  #contact ul {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 80%;
+  }
+  #contact ul li {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  #contact ul {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #contact ul li {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 #toggle {
@@ -331,11 +475,22 @@ header h1 {
   border-bottom: 20px solid white;
 }
 
+@media all and (min-width: 750px) {
+  #menu {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #menu:after {
+    left: 245px;
+  }
+}
+
 .list {
   width: 80%;
   list-style: circle;
   padding: 0;
-  margin: auto;
+  margin: 25px auto;
 }
 
 .list li {
@@ -350,7 +505,7 @@ header h1 {
 }
 
 .list-in li {
-  border-left: 1px solid #daae93;
+  border-left: 1px solid #cd8e67;
   padding: 5px 15px;
 }
 
@@ -369,7 +524,7 @@ header h1 {
 
 i {
   margin: 5px;
-  color: #daae93;
+  color: #cd8e67;
 }
 
 section {

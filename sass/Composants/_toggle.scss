@@ -104,3 +104,11 @@
     border-bottom: 20px solid white;
 }
 
+@media all and (min-width: 750px) {
+    #menu{
+        width: fit-content;
+        &:after {
+            left: 245px;
+        }
+    }
+}

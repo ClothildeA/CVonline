@@ -1,4 +1,6 @@
 .studies {
+    max-width: 1000px;
+
     &_item {
         border-left: 1px solid $color-corporate;
         margin: 15px;
@@ -16,5 +18,11 @@
         &--year {
             font-weight: 100;
         }
+    }
+}
+
+@media all and (min-width: 1025px) {
+    .studies_wrapper {
+        display: flex;
     }
 }

@@ -36,6 +36,15 @@
                 </ul>
             </nav>
         </div>
+        <nav id="menu-desktop">
+            <ul>
+                <li><a href="#who">présentation</a></li>
+                <li><a href="#studies">formation</a></li>
+                <li><a href="#xp">expériences</a></li>
+                <li><a href="#skill-wrapper">compétences</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
 
     </header>
     <main>
@@ -45,23 +54,26 @@
                 Présentation
             </h2>
             <img class="who_img" src="./images/circle-photo.png" alt="Photo de présentation">
-            <p class="who_content">
-                Clothilde est une Développeuse Web Fullstack JavaScript Junior,
-                créative et dotée d'une solide capacité d'adaptation et d'apprentissage.
-                Elle souhaite faire carrière dans une firme qui se consacre à la création de sites web.
-            </p>
-            <p class="who_content">
-                Elle aspire à exceller dans la coordination de toutes les facettes de la conception d'un site web,
-                de l'approbation à la sélection, jusqu'à la livraison finale ainsi que la maintenance.
-            </p>
-            <p class="who_content">
-                Succès confirmé dans la direction d'équipes multifonctionnelles dans le but d'atteindre des objectifs
-                fixes ou changeants et maintenir un degré élevé de satisfaction de sa clientèle.
-            </p>
-            <p class="who_content">
-                Cette reconversion professionnelle sera un nouveau challenge qu'elle relèvera en s'appuyant sur ses
-                expériences et ses qualifications.
-            </p>
+            <div class="who_wrapper">
+                <p class="who_content">
+                    Clothilde est une Développeuse Web Fullstack JavaScript Junior,
+                    créative et dotée d'une solide capacité d'adaptation et d'apprentissage.
+                    Elle souhaite faire carrière dans une firme qui se consacre à la création de sites web.
+                </p>
+                <p class="who_content">
+                    Elle aspire à exceller dans la coordination de toutes les facettes de la conception d'un site web,
+                    de l'approbation à la sélection, jusqu'à la livraison finale ainsi que la maintenance.
+                </p>
+                <p class="who_content">
+                    Succès confirmé dans la direction d'équipes multifonctionnelles dans le but d'atteindre des
+                    objectifs
+                    fixes ou changeants et maintenir un degré élevé de satisfaction de sa clientèle.
+                </p>
+                <p class="who_content">
+                    Cette reconversion professionnelle sera un nouveau challenge qu'elle relèvera en s'appuyant sur ses
+                    expériences et ses qualifications.
+                </p>
+            </div>
         </section>
 
         <section id="studies" class="studies">
@@ -69,23 +81,25 @@
                 <img class="logo" src="./images/diploma.png" alt="icône représentant undiplôme">
                 Formation
             </h2>
-            <div class="studies_item">
-                <h3 class="studies_item--title"><strong>Baccalauréat</strong> Economique et social</h3>
-                <p class="studies_item--year">2008</p>
-                <p class="studies_item--place">Lycée Militaire, <em>Aix-en-Provence</em></p>
-            </div>
-            <div class="studies_item">
-                <h3 class="studies_item--title">Bachelor Degree, Licence, BAC +3</h3>
-                <p class="studies_item--subtitle">Commerce internationnal -
-                    Spécialité Management en Hôtellerie &
-                    Restauration de luxe</p>
-                <p class="studies_item--year">2011</p>
-                <p class="studies_item--place">Institut Vatel, <em>Nîmes</em></p>
-            </div>
-            <div class="studies_item">
-                <h3 class="studies_item--title"><strong>Certification</strong> Développement Web</h3>
-                <p class="studies_item--year">2021</p>
-                <p class="studies_item--place">OpenClassRooms, <em>à distance</em></p>
+            <div class="studies_wrapper">
+                <div class="studies_item">
+                    <h3 class="studies_item--title"><strong>Baccalauréat</strong> Economique et social</h3>
+                    <p class="studies_item--year">2008</p>
+                    <p class="studies_item--place">Lycée Militaire, <em>Aix-en-Provence</em></p>
+                </div>
+                <div class="studies_item">
+                    <h3 class="studies_item--title">Bachelor Degree, Licence, BAC +3</h3>
+                    <p class="studies_item--subtitle">Commerce internationnal -
+                        Spécialité Management en Hôtellerie &
+                        Restauration de luxe</p>
+                    <p class="studies_item--year">2011</p>
+                    <p class="studies_item--place">Institut Vatel, <em>Nîmes</em></p>
+                </div>
+                <div class="studies_item">
+                    <h3 class="studies_item--title"><strong>Certification</strong> Développement Web</h3>
+                    <p class="studies_item--year">2021</p>
+                    <p class="studies_item--place">OpenClassRooms, <em>à distance</em></p>
+                </div>
             </div>
         </section>
 
@@ -199,7 +213,7 @@
 
         </section>
 
-        <div class="skill-wrapper">
+        <div id="skill-wrapper" class="skill-wrapper">
             <section id="soft-skl">
                 <h2 class="soft-skl_title">
                     <img class="logo" src="./images/competence.png"
@@ -207,24 +221,25 @@
                     Qualifications principales
                 </h2>
                 <ul class="list">
-                    <div class="half-list">
-                        <li>Français (C2), Anglais (C1), Espagnol (B2)</li>
-                        <li>Sens des responsabilités</li>
-                        <li>Excellent contact humain</li>
-                        <li>Team Work</li>
-                        <li>Autonomie</li>
-                        <li>Capacité d'adaptation</li>
-                        <li>Résistance au stress</li>
-                    </div>
-                    <div class="half-list">
-                        <li>Initiatives</li>
-                        <li>Force de propositions</li>
-                        <li>Gestion des priorités</li>
-                        <li>Sens du détail</li>
-                        <li>Rigueur</li>
-                        <li>Réactivité</li>
-                        <li>Logique productive</li>
-                    </div>
+
+                    <li>Français (C2), Anglais (C1), Espagnol (B2)</li>
+                    <li>Sens des responsabilités</li>
+                    <li>Excellent contact humain</li>
+                    <li>Team Work</li>
+                    <li>Autonomie</li>
+                    <li>Capacité d'adaptation</li>
+                    <li>Résistance au stress</li>
+                    <li>Initiatives</li>
+                    <li>Force de propositions</li>
+                    <li>Gestion des priorités</li>
+                    <li>Sens du détail</li>
+                    <li>Rigueur</li>
+                    <li>Réactivité</li>
+                    <li>Logique productive</li>
+                    <!--
+                    <div class="half-list"></div>
+                    <div class="half-list"></div>
+                -->
                 </ul>
             </section>
 
@@ -259,13 +274,13 @@
                     <img class="logo-xs" src="./images/phone.png" alt="icône représentant un téléphone">
                     <a href="tel:+33614429196">06 14 42 91 96</a>
                 </li>
+                <li><img class="logo-xs" src="./images/github.png" alt="icône représentant le logo Github">
+                    <a href="https://github.com/ClothildeA">https://github.com/ClothildeA</a>
+                </li>
                 <li>
                     <img class="logo-xs" src="./images/home.png" alt="icône représentant une maison">
                     5 rue Van Loo
                     <br>13100 Aix-en-Provence
-                </li>
-                <li><img class="logo-xs" src="./images/github.png" alt="icône représentant le logo Github">
-                    <a href="https://github.com/ClothildeA">https://github.com/ClothildeA</a>
                 </li>
             </ul>
         </section>

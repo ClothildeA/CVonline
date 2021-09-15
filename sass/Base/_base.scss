@@ -18,6 +18,9 @@ h2 {
     border-bottom: 1px solid $color-corporate;
     padding-bottom: 10px;
     width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {

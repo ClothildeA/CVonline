@@ -20,6 +20,16 @@ h2 {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section {
@@ -334,6 +344,9 @@ header #menu-desktop {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     width: 80%;
+    width: 80%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   #contact ul li {
     -ms-flex-preferred-size: 50%;
@@ -344,22 +357,26 @@ header #menu-desktop {
 @media all and (min-width: 1025px) {
   #contact ul {
     padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact ul div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 10px;
   }
   #contact ul li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
   }
 }
 

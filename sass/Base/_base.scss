@@ -33,18 +33,22 @@ section {
 
 @media all and (min-width: 750px) {
     section {
-        max-width: 600px;
+        max-width: 700px;
     }
 
 }
 
 @media all and (min-width: 1025px) {
     section {
-        max-width: 750px;
+        max-width: 800px;
     }
 
     #xp {
         max-width: 1200px;
+    }
+
+    #hobbies {
+        max-width: 900px;
     }
     
 }

@@ -3,6 +3,12 @@
 
 @import './Base/base';
 
+@import './Composants/toggle';
+@import './Composants/list';
+@import './Composants/logos';
+@import './Composants/anim-sections';
+@import './Composants/footer';
+
 @import './Layout/header';
 @import './Layout/who';
 @import './Layout/studies';
@@ -10,8 +16,3 @@
 @import './Layout/skills';
 @import './Layout/contact';
 @import './Layout/hobbies';
-
-@import './Composants/toggle';
-@import './Composants/list';
-@import './Composants/logos';
-@import './Composants/anim-sections';

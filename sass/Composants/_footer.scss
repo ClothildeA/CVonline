@@ -1,0 +1,22 @@
+footer {
+    display: flex;
+    justify-content: center;
+
+    a {
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 5px 5px 0 0;
+        transition: all .4s;
+
+        &:hover {
+            background: #daae93;
+            & i {
+                color: #fff;
+            }
+        }
+
+        i {
+            color: $color-light-text;
+        }
+    }
+}

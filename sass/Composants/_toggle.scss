@@ -50,11 +50,14 @@
 #toggle.on+#menu {
     opacity: 1;
     visibility: visible;
+    height: 187px;
 }
 
 /* menu appearance*/
 #menu {
     position: relative;
+    height: 0;
+    z-index: 1;
     color: #999;
     width: 140px;
     padding: 10px;
@@ -66,7 +69,7 @@
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
     opacity: 0;
     visibility: hidden;
-    transition: opacity .4s;
+    transition: all .5s;
 
     ul,
     li,
@@ -81,7 +84,7 @@
         padding: 5px;
         color: #888;
         text-decoration: none;
-        transition: all .3s;
+        transition: all .35s;
         border-radius: 5px;
         font-size: .8rem;
     }
@@ -110,5 +113,8 @@
         &:after {
             left: 245px;
         }
+    }
+    #toggle.on+#menu {
+        height: 160px;
     }
 }

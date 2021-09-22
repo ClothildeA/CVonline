@@ -1,0 +1,46 @@
+.hobbies_wrapper {
+  margin: 20px;
+}
+.hobbies_wrapper--item {
+  border-radius: 15px;
+  border: 5px solid #fff;
+  box-shadow: 0 1px 10px #9e9e9e;
+  margin: 25px;
+  width: 250px;
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+}
+.hobbies_wrapper .scotland {
+  background-image: url("../images/scotland.jpg");
+}
+.hobbies_wrapper .pop-culture {
+  background-image: url("../images/pop-culture.jpg");
+}
+.hobbies_wrapper .dog {
+  background-image: url("../images/dog.jpg");
+}
+.hobbies_content {
+  margin: 10px 5px;
+}
+
+@media all and (min-width: 750px) {
+  .hobbies_wrapper {
+    display: flex;
+    flex-basis: 100%;
+    width: 100%;
+  }
+  .hobbies_wrapper--item {
+    margin: 5px;
+  }
+}
+@media all and (min-width: 1025px) {
+  .hobbies_wrapper {
+    justify-content: space-between;
+  }
+
+  .hobbies_content {
+    margin: 10px 0;
+    width: 50%;
+  }
+}

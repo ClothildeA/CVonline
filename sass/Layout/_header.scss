@@ -1,17 +1,15 @@
 header {
-    background-image: url('../images/pink-bg.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-color: $color-bg-body;
     display: flex;
     flex-basis: 100%;
     justify-content: space-between;
     padding: 15px;
-    max-width: 600px;
     margin: auto;
+    margin-bottom: 30px;
 
     h1 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+        width: 50%;
     }
 
     #menu-desktop {
@@ -21,18 +19,30 @@ header {
 
 @media all and (min-width: 750px) {
     header {
-        background-position: bottom;
+            max-width: 600px;
+
         h1 {
-            font-size: 2.5rem;
+            font-size: 1.7rem;
             flex-basis: 50%;
+            text-align: left;
         }
     }
 }
 
 @media all and (min-width: 1025px) {
     header {
-        max-width: 1200px;
+        max-width: 100%;
+        align-items: center;
         flex-direction: column;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        box-shadow: 0px -7px 15px 0px #a8a6a2;
+        padding: 5px 15px 15px;
+
+        h1 {
+            text-align: center;
+        }
 
         .menu-toggle {
             display: none;
@@ -42,8 +52,10 @@ header {
             display: block;
             background: #fff;
             border-radius: 5px;
-            padding: 25px;
+            padding: 10px 10px 13px;
+            width: 900px;
             font-family: "Major Mono Display", monospace;
+            box-shadow: 0px 0px 10px 0px #a8a6a226;
 
             ul {
                 list-style: none;
@@ -61,10 +73,10 @@ header {
                     a {
                         color: #888;
                         text-decoration: none;
-                        font-size: .8rem;
+                        font-size: .7rem;
                         transition: all .3s;
                         border-radius: 5px;
-                        padding: 15px;
+                        padding: 10px;
                         
                         &:hover,
                         &:focus,

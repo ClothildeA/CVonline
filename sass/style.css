@@ -7,8 +7,7 @@ body {
   font-family: "Raleway", sans-serif;
   color: #2e2e2e;
   font-size: 1rem;
-  border: 1px solid #cd8e67;
-  border-radius: 5px;
+  margin: 0;
 }
 
 h1 {
@@ -125,11 +124,14 @@ section {
 #toggle.on + #menu {
   opacity: 1;
   visibility: visible;
+  height: 187px;
 }
 
 /* menu appearance*/
 #menu {
   position: relative;
+  height: 0;
+  z-index: 1;
   color: #999;
   width: 140px;
   padding: 10px;
@@ -142,8 +144,8 @@ section {
           box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity .4s;
-  transition: opacity .4s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 #menu ul,
@@ -159,8 +161,8 @@ section {
   padding: 5px;
   color: #888;
   text-decoration: none;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all .35s;
+  transition: all .35s;
   border-radius: 5px;
   font-size: .8rem;
 }
@@ -190,6 +192,9 @@ section {
   }
   #menu:after {
     left: 245px;
+  }
+  #toggle.on + #menu {
+    height: 160px;
   }
 }
 
@@ -296,10 +301,7 @@ footer a i {
 }
 
 header {
-  background-image: url("../images/pink-bg.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-color: #f3f0ec;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,12 +311,13 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px;
-  max-width: 600px;
   margin: auto;
+  margin-bottom: 30px;
 }
 
 header h1 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  width: 50%;
 }
 
 header #menu-desktop {
@@ -323,22 +326,36 @@ header #menu-desktop {
 
 @media all and (min-width: 750px) {
   header {
-    background-position: bottom;
+    max-width: 600px;
   }
   header h1 {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    text-align: left;
   }
 }
 
 @media all and (min-width: 1025px) {
   header {
-    max-width: 1200px;
+    max-width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    -webkit-box-shadow: 0px -7px 15px 0px #a8a6a2;
+            box-shadow: 0px -7px 15px 0px #a8a6a2;
+    padding: 5px 15px 15px;
+  }
+  header h1 {
+    text-align: center;
   }
   header .menu-toggle {
     display: none;
@@ -347,8 +364,11 @@ header #menu-desktop {
     display: block;
     background: #fff;
     border-radius: 5px;
-    padding: 25px;
+    padding: 10px 10px 13px;
+    width: 900px;
     font-family: "Major Mono Display", monospace;
+    -webkit-box-shadow: 0px 0px 10px 0px #a8a6a226;
+            box-shadow: 0px 0px 10px 0px #a8a6a226;
   }
   header #menu-desktop ul {
     list-style: none;
@@ -372,11 +392,11 @@ header #menu-desktop {
   header #menu-desktop ul li a {
     color: #888;
     text-decoration: none;
-    font-size: .8rem;
+    font-size: .7rem;
     -webkit-transition: all .3s;
     transition: all .3s;
     border-radius: 5px;
-    padding: 15px;
+    padding: 10px;
   }
   header #menu-desktop ul li a:hover, header #menu-desktop ul li a:focus, header #menu-desktop ul li a:active {
     color: #fff;
@@ -426,10 +446,6 @@ header #menu-desktop {
     display: -ms-flexbox;
     display: flex;
   }
-}
-
-.xp-wrapper .xp {
-  margin-bottom: 70px;
 }
 
 .xp-wrapper .xp_item {
@@ -513,8 +529,8 @@ header #menu-desktop {
         flex-basis: 100%;
   }
   #soft-skl ul li {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
   }
 }
 
@@ -540,7 +556,6 @@ header #menu-desktop {
 }
 
 #contact {
-  margin: 50px auto;
   max-width: 1200px;
 }
 
@@ -616,6 +631,10 @@ header #menu-desktop {
   }
 }
 
+.hobbies_wrapper {
+  margin: 20px;
+}
+
 .hobbies_wrapper--item {
   border-radius: 15px;
   border: 5px solid #fff;
@@ -640,6 +659,10 @@ header #menu-desktop {
   background-image: url("../images/dog.jpg");
 }
 
+.hobbies_content {
+  margin: 10px 5px;
+}
+
 @media all and (min-width: 750px) {
   .hobbies_wrapper {
     display: -webkit-box;
@@ -659,6 +682,10 @@ header #menu-desktop {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .hobbies_content {
+    margin: 10px 0;
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -78,7 +78,7 @@
 .hobbies_wrapper .button-container .button:nth-child(2) {
   float: right;
 }
-.hobbies_content {
+.hobbies_p--content {
   margin: 10px 5px;
 }
 
@@ -95,8 +95,10 @@
     align-items: center;
   }
 
-  .hobbies_content {
-    margin: 10px 0;
+  .hobbies_p {
     width: 50%;
+  }
+  .hobbies_p--content {
+    margin: 10px 0;
   }
 }

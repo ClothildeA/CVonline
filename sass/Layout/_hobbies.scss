@@ -92,7 +92,7 @@
         }
     }
     
-    &_content {
+    &_p--content {
         margin: 10px 5px;
     }
 
@@ -112,8 +112,10 @@
     .hobbies_wrapper {
         align-items: center;
     }
-    .hobbies_content {
-        margin: 10px 0;
+    .hobbies_p{
         width: 50%;
+        &--content {
+            margin: 10px 0;
+        }
     }
 }

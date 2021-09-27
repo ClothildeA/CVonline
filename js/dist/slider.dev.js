@@ -1,6 +1,5 @@
 "use strict";
 
-// I will be creating a different pen with touch support but right // now I have no time for it due to school
 var slider = document.querySelector(".items");
 var slides = document.querySelectorAll(".item");
 var button = document.querySelectorAll(".button");

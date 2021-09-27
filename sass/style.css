@@ -240,36 +240,18 @@ i {
   color: #cd8e67;
 }
 
-main {
-  -webkit-animation: slide-top 2000ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 800ms both;
-          animation: slide-top 2000ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 800ms both;
+.reveal {
+  opacity: 0;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
 }
 
-@keyframes slide-top {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-  }
-}
-
-@-webkit-keyframes slide-top {
-  /* sur Safari et Chrome */
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+.reveal-loaded {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 1s cubic-bezier(0.5, 0, 0, 1);
+  transition: 1s cubic-bezier(0.5, 0, 0, 1);
 }
 
 footer {
@@ -737,7 +719,7 @@ header #menu-desktop {
   float: right;
 }
 
-.hobbies_content {
+.hobbies_p--content {
   margin: 10px 5px;
 }
 
@@ -762,9 +744,11 @@ header #menu-desktop {
         -ms-flex-align: center;
             align-items: center;
   }
-  .hobbies_content {
-    margin: 10px 0;
+  .hobbies_p {
     width: 50%;
+  }
+  .hobbies_p--content {
+    margin: 10px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
